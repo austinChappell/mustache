@@ -6,7 +6,8 @@
   </head>
   <body>
     <h1>Hello, world!</h1>
-    <p>{{ person1.name }} is {{ person1.age }} years old and you hair color is {{ person1.hair }}.</p>
-    <p>{{ person2.name }} is {{ person2.age }} years old and you hair color is {{ person2.hair }}.</p>
+    {{ #person }}
+    <p>{{ name }} is {{ age }} years old and you hair color is {{ hair }}.</p>
+    {{ /person }}
   </body>
 </html>
